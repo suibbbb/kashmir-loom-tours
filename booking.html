@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Setup - Kashmir Loom Tour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Thin Navigation -->
+    <nav class="navbar solid-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🏔️</span>
+                <div class="logo-text">
+                    <span class="logo-main">Kashmir Loom</span>
+                    <span class="logo-sub">Back to Home</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#packages" class="nav-link">Tours</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="booking-page-container container">
+        <div class="booking-grid">
+            
+            <!-- Left Side: Itinerary Details -->
+            <div class="booking-details-col">
+                <div class="booking-img-wrapper">
+                    <img id="detail-img" src="images/dal-lake.png" alt="Tour Cover">
+                    <div class="detail-badge" id="detail-tag">Featured</div>
+                </div>
+
+                <div class="detail-header">
+                    <h1 id="detail-title">Package Name</h1>
+                    <div class="detail-meta">
+                        <span id="detail-duration"><i class="fas fa-calendar-alt"></i> Loading...</span>
+                        <span id="detail-pax-info"><i class="fas fa-users"></i> Loading...</span>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Overview</h2>
+                    <p id="detail-desc">Loading description...</p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Itinerary</h2>
+                    <div class="itinerary-timeline" id="detail-itinerary">
+                        <!-- JS injected -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Sticky Checkout System -->
+            <div class="booking-form-col">
+                <div class="sticky-booking-card">
+                    <div class="booking-price-head">
+                        <span class="total-text" id="calc-base-price">₹0</span>
+                        <span class="per-text">/ person base</span>
+                    </div>
+
+                    <form id="tour-checkout-form" class="checkout-form">
+                        
+                        <div class="checkout-group">
+                            <label>Full Name</label>
+                            <input type="text" id="book-name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="checkout-group">
+                            <label>Phone Number</label>
+                            <input type="tel" id="book-phone" placeholder="e.g. 9876543210" required>
+                        </div>
+
+                        <div class="checkout-group">
+                            <label>Travel Date</label>
+                            <input type="date" id="book-date" required>
+                        </div>
+
+                        <div class="checkout-group">
+                            <label>Number of Guests</label>
+                            <div class="guest-counter">
+                                <button type="button" id="btn-minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" id="book-guests" value="2" min="1" max="50">
+                                <button type="button" id="btn-plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="checkout-summary">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="summary-subtotal">₹0</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Taxes & Fees (5%)</span>
+                                <span id="summary-tax">₹0</span>
+                            </div>
+                            <div class="summary-divider"></div>
+                            <div class="summary-row grand-total">
+                                <span>Total Amount</span>
+                                <span id="summary-total">₹0</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary w-100" id="btn-book-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                        </button>
+                        <p class="secure-note"><i class="fas fa-lock"></i> Secure & transparent booking</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

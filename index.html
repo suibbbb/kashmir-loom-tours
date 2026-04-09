@@ -3,43 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kashmir Loom Tour & Travels by Mannat Tour & Travels — Experience Jannat on Earth</title>
-    <meta name="description" content="Kashmir Loom Tour and Travels by Mannat Tour & Travels — Your trusted travel agency for unforgettable Kashmir experiences. Honeymoon, family, group, luxury & budget tour packages. Open 24 hours.">
+    <title>Kashmir Loom Tour & Travels by Mannat Tour & Travels - Experience Jannat on Earth</title>
+    <meta name="description" content="Kashmir Loom Tour and Travels by Mannat Tour & Travels - Your trusted travel agency for unforgettable Kashmir experiences. Honeymoon, family, group, luxury & budget tour packages. Open 24 hours.">
     <meta name="keywords" content="Kashmir tours, Mannat Tour Travels, Kashmir honeymoon, Dal Lake, Gulmarg, Pahalgam, Sonamarg, Kashmir travel agency">
-    <meta name="theme-color" content="#1a5c3a">
-    <meta property="og:title" content="Kashmir Loom Tour & Travels — Experience Jannat on Earth">
-    <meta property="og:description" content="Discover paradise on earth with Mannat Tour & Travels. Honeymoon, family, group & luxury Kashmir packages.">
-    <meta property="og:type" content="website">
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader-content">
-            <div class="loader-ring"></div>
-            <p class="loader-title">Kashmir Loom</p>
-            <p class="loader-sub">Jannat on Earth</p>
+            <div class="loader-mandala"></div>
+            <p class="loader-text">Welcome to Kashmir</p>
+            <p class="loader-subtext">Jannat on Earth</p>
         </div>
     </div>
-
-    <!-- Mobile Nav Overlay -->
-    <div class="nav-overlay" id="nav-overlay"></div>
 
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <span class="logo-emblem">🏔️</span>
+            <a href="#home" class="nav-logo" id="nav-logo">
+                <span class="logo-icon">🏔️</span>
                 <div class="logo-text">
                     <span class="logo-main">Kashmir Loom</span>
-                    <span class="logo-sub">by Mannat Tour &amp; Travels</span>
+                    <span class="logo-sub">by Mannat Tour & Travels</span>
                 </div>
             </a>
             <ul class="nav-links" id="nav-links">
@@ -50,13 +40,19 @@
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <a href="tel:+917889528922" class="nav-cta">
-                <i class="fas fa-phone"></i>
-                <span>Book Now</span>
-            </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <div class="nav-actions">
+                <button class="nav-login-btn" id="nav-login-btn" aria-label="Login or Register">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Login</span>
+                </button>
+                <a href="tel:+917889528922" class="nav-cta" id="nav-cta">
+                    <i class="fas fa-phone"></i> Book Now
+                </a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -67,29 +63,29 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg">
-            <img src="images/hero-bg.png" alt="Kashmir Mountain Landscape" class="hero-bg-img" fetchpriority="high">
+            <img src="images/hero-bg.png" alt="Kashmir Mountain Landscape" class="hero-bg-img">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-particles" id="hero-particles"></div>
         <div class="hero-content">
             <div class="hero-badge">
-                <i class="fas fa-star"></i>&nbsp; Rated 5.0 by 117+ Travelers
+                <span class="badge-star">★</span> Rated 5.0 by 117+ Travelers
             </div>
             <h1 class="hero-title">
                 <span class="hero-title-line">Experience the</span>
                 <span class="hero-title-line hero-title-accent">Magic of Kashmir</span>
             </h1>
-            <p class="hero-brand-line">Kashmir Loom Tour &amp; Travels &nbsp;·&nbsp; CEO: <strong>Mr. Bilal Ahmad Ahanger</strong></p>
-            <p class="hero-subtitle">
-                Discover paradise on earth with Mannat Tour &amp; Travels. From snow-capped
-                mountains to serene Dal Lake, we craft unforgettable journeys through Jannat.
+            <p class="hero-subtitle" style="font-size:0.85rem;opacity:0.7;margin-bottom:2px;">Kashmir Loom Tour & Travels by Mannat Tour & Travels</p>
+            <p class="hero-subtitle" style="font-size:0.85rem;opacity:0.9;margin-bottom:8px;font-weight:bold;color:var(--clr-accent-light);">CEO: Mr. Bilal Ahmad Ahanger</p>
+            <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto 32px;">
+                Discover paradise on earth with Mannat Tour & Travels. We specialize in curating immersive, luxurious, and budget-friendly Kashmir & Ladakh holiday experiences. From the snow-capped peaks of Gulmarg to the serene shikara rides on Dal Lake, we craft unforgettable journeys in Jannat tailored just for you.
             </p>
             <div class="hero-cta-group">
-                <a href="#packages" class="btn btn-primary">
+                <a href="#packages" class="btn btn-primary" id="hero-explore-btn">
                     <span>Explore Packages</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
-                <a href="tel:+917889528922" class="btn btn-ghost">
+                <a href="tel:+917889528922" class="btn btn-secondary" id="hero-call-btn">
                     <i class="fas fa-phone-alt"></i>
                     <span>Call Us Now</span>
                 </a>
@@ -117,8 +113,8 @@
             </div>
         </div>
         <div class="hero-scroll">
-            <a href="#about" class="scroll-indicator">
-                <span class="scroll-text">Scroll</span>
+            <a href="#about" class="scroll-indicator" id="scroll-indicator">
+                <span class="scroll-text">Scroll Down</span>
                 <div class="scroll-line"></div>
             </a>
         </div>
@@ -130,14 +126,14 @@
             <div class="about-grid">
                 <div class="about-images">
                     <div class="about-img-main">
-                        <img src="images/shikara.png" alt="Shikara Ride on Dal Lake" loading="lazy">
+                        <img src="images/shikara.png" alt="Shikara Ride on Dal Lake">
                     </div>
                     <div class="about-img-float">
-                        <img src="images/dal-lake.png" alt="Dal Lake Kashmir" loading="lazy">
+                        <img src="images/dal-lake.png" alt="Dal Lake Kashmir">
                     </div>
-                    <div class="about-badge">
-                        <span class="badge-num">5+</span>
-                        <span class="badge-txt">Years of<br>Excellence</span>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Years of<br>Excellence</span>
                     </div>
                 </div>
                 <div class="about-content">
@@ -145,16 +141,16 @@
                         <span class="label-line"></span>
                         <span class="label-text">About Us</span>
                     </div>
-                    <h2 class="section-title">Welcome to <em>Kashmir</em></h2>
+                    <h2 class="section-title">Welcome to <span class="text-accent">Kashmir</span></h2>
                     <p class="about-lead">
-                        Kashmir Loom Tour and Travels, operated by <strong>Mannat Tour &amp; Travels</strong>,
-                        is your gateway to experiencing the unparalleled beauty of Jammu &amp; Kashmir.
+                        Kashmir Loom Tour and Travels, operated by <strong>Mannat Tour & Travels</strong>, 
+                        is your gateway to experiencing the unparalleled beauty of Jammu & Kashmir.
                     </p>
                     <p class="about-text">
-                        They say Kashmir is beauty itself — its weather, landscapes, and spirit are unlike
-                        anywhere else on Earth. Led by the dedicated <strong>Bilal Bhai</strong>, our team
-                        ensures every trip is thoughtfully organized from planning to execution, making
-                        you feel right at home.
+                        It is said that Kashmir is known by the same name because Kashmir is different from 
+                        the beauty and places of Kashmir. The weather here is natural. Led by the dedicated 
+                        <strong>Bilal Bhai</strong>, our team ensures every trip is thoughtfully organized — 
+                        from planning to execution, making you feel right at home.
                     </p>
                     <div class="about-features">
                         <div class="feature-item">
@@ -175,7 +171,7 @@
                             <div class="feature-icon"><i class="fas fa-concierge-bell"></i></div>
                             <div class="feature-info">
                                 <h4>Premium Hotels</h4>
-                                <p>Handpicked stays for comfort &amp; luxury</p>
+                                <p>Handpicked stays for comfort & luxury</p>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -191,6 +187,84 @@
         </div>
     </section>
 
+    <!-- Kashmiri Artifact Divider -->
+    <div class="kashmiri-divider">
+        <div class="divider-pattern"></div>
+        <img src="images/chinar-leaf.png" alt="" class="divider-leaf" aria-hidden="true">
+        <div class="divider-pattern"></div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-label center">
+                    <span class="label-line"></span>
+                    <span class="label-text">Why Choose Us</span>
+                    <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">Why Travel With <span class="text-accent">Kashmir Loom</span></h2>
+                <p class="section-subtitle">Discover the reasons that make us the most trusted travel partner for your Kashmir journey</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" id="why-local-experts">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="why-icon-glow"></div>
+                    </div>
+                    <div class="why-number">01</div>
+                    <h3>Born & Raised Kashmiri Guides</h3>
+                    <p>Our team is led by locals who know every hidden gem, shortcut, and secret viewpoint — giving you an authentic experience no outsider-run agency can match.</p>
+                </div>
+                <div class="why-card" id="why-pricing">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        <div class="why-icon-glow"></div>
+                    </div>
+                    <div class="why-number">02</div>
+                    <h3>100% Transparent Pricing</h3>
+                    <p>No hidden costs, no surprise charges. What you see is what you pay. We share complete cost breakdowns before you book — total honesty, always.</p>
+                </div>
+                <div class="why-card" id="why-support">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon"><i class="fas fa-headset"></i></div>
+                        <div class="why-icon-glow"></div>
+                    </div>
+                    <div class="why-number">03</div>
+                    <h3>24/7 On-Trip Support</h3>
+                    <p>From the moment you land to the moment you depart, our team is available around the clock via call or WhatsApp — whether it's midnight or early dawn.</p>
+                </div>
+                <div class="why-card" id="why-customization">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon"><i class="fas fa-sliders-h"></i></div>
+                        <div class="why-icon-glow"></div>
+                    </div>
+                    <div class="why-number">04</div>
+                    <h3>Fully Customizable Trips</h3>
+                    <p>Every family is different. We tailor every itinerary to your pace, budget, and interests — whether it's a romantic honeymoon or an adrenaline-packed adventure.</p>
+                </div>
+                <div class="why-card" id="why-safety">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="why-icon-glow"></div>
+                    </div>
+                    <div class="why-number">05</div>
+                    <h3>Safety First, Always</h3>
+                    <p>Verified hotels, experienced drivers, and well-maintained vehicles. We personally inspect every stay and route so you travel worry-free with your loved ones.</p>
+                </div>
+                <div class="why-card" id="why-reviews">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon"><i class="fas fa-award"></i></div>
+                        <div class="why-icon-glow"></div>
+                    </div>
+                    <div class="why-number">06</div>
+                    <h3>5.0★ Rated by 117+ Travelers</h3>
+                    <p>Our perfect Google rating isn't accidental. It's earned through exceptional service, personal attention, and consistently exceeding expectations trip after trip.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Destinations Section -->
     <section id="destinations" class="destinations section">
         <div class="container">
@@ -200,28 +274,32 @@
                     <span class="label-text">Popular Destinations</span>
                     <span class="label-line"></span>
                 </div>
-                <h2 class="section-title">Explore <em>Paradise</em></h2>
+                <h2 class="section-title">Explore <span class="text-accent">Paradise</span></h2>
                 <p class="section-subtitle">Discover the most breathtaking destinations Kashmir has to offer</p>
             </div>
             <div class="destinations-grid">
-                <div class="destination-card">
+                <div class="destination-card" id="dest-dal-lake">
                     <div class="dest-img">
-                        <img src="images/dal-lake.png" alt="Dal Lake Srinagar" loading="lazy">
-                        <span class="dest-tag">Most Popular</span>
+                        <img src="images/dal-lake.png" alt="Dal Lake Srinagar">
+                        <div class="dest-overlay">
+                            <span class="dest-tag">Most Popular</span>
+                        </div>
                     </div>
                     <div class="dest-content">
                         <h3>Dal Lake, Srinagar</h3>
-                        <p>Experience iconic shikara rides and floating gardens on the jewel of Srinagar.</p>
+                        <p>Experience the iconic shikara rides and floating gardens on the jewel of Srinagar.</p>
                         <div class="dest-meta">
-                            <span><i class="fas fa-clock"></i> 2–3 Hours</span>
+                            <span><i class="fas fa-clock"></i> 2-3 Hours</span>
                             <span><i class="fas fa-star"></i> 4.9</span>
                         </div>
                     </div>
                 </div>
-                <div class="destination-card">
+                <div class="destination-card" id="dest-gulmarg">
                     <div class="dest-img">
-                        <img src="images/gulmarg.png" alt="Gulmarg" loading="lazy">
-                        <span class="dest-tag">Adventure</span>
+                        <img src="images/gulmarg.png" alt="Gulmarg">
+                        <div class="dest-overlay">
+                            <span class="dest-tag">Adventure</span>
+                        </div>
                     </div>
                     <div class="dest-content">
                         <h3>Gulmarg</h3>
@@ -232,10 +310,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="destination-card">
+                <div class="destination-card" id="dest-pahalgam">
                     <div class="dest-img">
-                        <img src="images/pahalgam.png" alt="Pahalgam" loading="lazy">
-                        <span class="dest-tag">Nature</span>
+                        <img src="images/pahalgam.png" alt="Pahalgam">
+                        <div class="dest-overlay">
+                            <span class="dest-tag">Nature</span>
+                        </div>
                     </div>
                     <div class="dest-content">
                         <h3>Pahalgam</h3>
@@ -246,10 +326,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="destination-card">
+                <div class="destination-card" id="dest-sonamarg">
                     <div class="dest-img">
-                        <img src="images/sonamarg.png" alt="Sonamarg" loading="lazy">
-                        <span class="dest-tag">Scenic</span>
+                        <img src="images/sonamarg.png" alt="Sonamarg">
+                        <div class="dest-overlay">
+                            <span class="dest-tag">Scenic</span>
+                        </div>
                     </div>
                     <div class="dest-content">
                         <h3>Sonamarg</h3>
@@ -273,171 +355,149 @@
                     <span class="label-text">Tour Packages</span>
                     <span class="label-line"></span>
                 </div>
-                <h2 class="section-title">Best Kashmir <em>Tour Packages</em></h2>
-                <p class="section-subtitle">Carefully crafted packages designed for every type of traveler</p>
+                <h2 class="section-title">Best Kashmir <span class="text-accent">Tour Packages</span></h2>
+                <p class="section-subtitle">Choose from our carefully crafted tour packages designed for every traveler</p>
             </div>
-            <div class="packages-grid">
-
-                <!-- Group Tour -->
-                <div class="package-card">
-                    <div class="package-badge badge-popular">Popular</div>
+            <!-- Package Search Bar -->
+            <div class="package-search-wrap" id="package-search-wrap">
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="package-search" placeholder="Search packages... (e.g., honeymoon, budget, luxury, family)" autocomplete="off">
+                    <button class="search-clear" id="search-clear" aria-label="Clear search" style="display:none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <p class="search-results-info" id="search-results-info"></p>
+            </div>
+            <div class="packages-grid" id="packages-grid">
+                <div class="package-card" id="pkg-group">
+                    <div class="package-badge">Popular</div>
                     <div class="package-header">
                         <div class="package-icon"><i class="fas fa-user-friends"></i></div>
-                        <h3>Group Tour</h3>
+                        <h3>Kashmir Group Tour</h3>
                         <p class="package-duration"><i class="fas fa-calendar-alt"></i> 4 Days / 3 Nights · 12 Pax</p>
                     </div>
                     <div class="package-body">
-                        <p class="package-desc">Best for student &amp; friends groups. Shared hotels, group cab &amp; full Kashmir sightseeing included.</p>
+                        <p class="package-desc">Best for student & friends groups. Shared hotels, group cab & full Kashmir sightseeing included.</p>
                         <div class="package-price">
                             <span class="price-amount">₹76,000</span>
-                            <span class="price-label">total package</span>
+                            <span class="price-per">total package</span>
                         </div>
-                        <a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Kashmir%20Group%20Tour%20Package%20(12%20Pax)" target="_blank" rel="noopener" class="btn btn-package">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Us <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="booking.html?pkg=pkg-group" class="btn btn-package" id="pkg-group-btn"><i class="fas fa-calendar-check"></i> Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Budget Tour -->
-                <div class="package-card">
-                    <div class="package-badge badge-value">Best Value</div>
+                <div class="package-card" id="pkg-budget">
+                    <div class="package-badge">Featured</div>
                     <div class="package-header">
                         <div class="package-icon"><i class="fas fa-wallet"></i></div>
-                        <h3>Budget Tour</h3>
+                        <h3>Budget Kashmir Tour</h3>
                         <p class="package-duration"><i class="fas fa-calendar-alt"></i> 4 Days / 3 Nights · 2 Pax</p>
                     </div>
                     <div class="package-body">
-                        <p class="package-desc">Affordable Kashmir tour for families, couples or solo travelers. Includes hotel, cab &amp; sightseeing.</p>
+                        <p class="package-desc">Affordable Kashmir tour for families, couples or solo travelers. Includes hotel, cab & sightseeing at best rates.</p>
                         <div class="package-price">
                             <span class="price-amount">₹22,000</span>
-                            <span class="price-label">total package</span>
+                            <span class="price-per">total package</span>
                         </div>
-                        <a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Budget%20Kashmir%20Tour%20Package" target="_blank" rel="noopener" class="btn btn-package">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Us <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="booking.html?pkg=pkg-budget" class="btn btn-package" id="pkg-budget-btn"><i class="fas fa-calendar-check"></i> Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Luxury Tour — Featured -->
-                <div class="package-card package-featured">
-                    <div class="package-badge badge-luxury">Luxury</div>
+                <div class="package-card featured" id="pkg-luxury">
+                    <div class="package-badge">Featured</div>
                     <div class="package-header">
                         <div class="package-icon"><i class="fas fa-gem"></i></div>
-                        <h3>Luxury Tour</h3>
+                        <h3>Luxury Kashmir Tour</h3>
                         <p class="package-duration"><i class="fas fa-calendar-alt"></i> 7 Days / 6 Nights · 2 Pax</p>
                     </div>
                     <div class="package-body">
-                        <p class="package-desc">Premium Kashmir tour with luxury hotels, private transfers &amp; personalized services. Ideal for high-end travel.</p>
+                        <p class="package-desc">Premium Kashmir tour with luxury hotels, private transfers & personalized services. Ideal for high-end travel.</p>
                         <div class="package-price">
                             <span class="price-amount">₹95,999</span>
-                            <span class="price-label">total package</span>
+                            <span class="price-per">total package</span>
                         </div>
-                        <a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Luxury%20Kashmir%20Tour%20Package" target="_blank" rel="noopener" class="btn btn-package-featured">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Us <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="booking.html?pkg=pkg-luxury" class="btn btn-package" id="pkg-luxury-btn"><i class="fas fa-calendar-check"></i> Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Family Tour -->
-                <div class="package-card">
-                    <div class="package-badge badge-popular">Family</div>
+                <div class="package-card" id="pkg-family">
+                    <div class="package-badge">Featured</div>
                     <div class="package-header">
                         <div class="package-icon"><i class="fas fa-users"></i></div>
-                        <h3>Family Tour</h3>
+                        <h3>Family Kashmir Tour</h3>
                         <p class="package-duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights · 4 Pax</p>
                     </div>
                     <div class="package-body">
-                        <p class="package-desc">Perfect family trip with safe travel, kid-friendly sightseeing &amp; comfortable hotel stays.</p>
+                        <p class="package-desc">Perfect Kashmir family trip with safe travel, kid-friendly sightseeing & comfortable hotel stays in top destinations.</p>
                         <div class="package-price">
                             <span class="price-amount">₹48,000</span>
-                            <span class="price-label">total package</span>
+                            <span class="price-per">total package</span>
                         </div>
-                        <a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Family%20Kashmir%20Tour%20Package" target="_blank" rel="noopener" class="btn btn-package">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Us <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="booking.html?pkg=pkg-family" class="btn btn-package" id="pkg-family-btn"><i class="fas fa-calendar-check"></i> Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Best Tour -->
-                <div class="package-card">
-                    <div class="package-badge badge-value">Best Pick</div>
+                <div class="package-card" id="pkg-best">
+                    <div class="package-badge">Featured</div>
                     <div class="package-header">
                         <div class="package-icon"><i class="fas fa-star"></i></div>
                         <h3>Best Kashmir Tour</h3>
                         <p class="package-duration"><i class="fas fa-calendar-alt"></i> 5 Days / 4 Nights · 2 Pax</p>
                     </div>
                     <div class="package-body">
-                        <p class="package-desc">Enjoy the best of Kashmir in 5 days — Srinagar, Gulmarg &amp; Pahalgam with stays and local tours.</p>
+                        <p class="package-desc">Enjoy the best of Kashmir in 5 days. Visit Srinagar, Gulmarg & Pahalgam with stays, transport & local tours included.</p>
                         <div class="package-price">
                             <span class="price-amount">₹26,999</span>
-                            <span class="price-label">total package</span>
+                            <span class="price-per">total package</span>
                         </div>
-                        <a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Best%20Kashmir%20Tour%20Package" target="_blank" rel="noopener" class="btn btn-package">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Us <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="booking.html?pkg=pkg-best" class="btn btn-package" id="pkg-best-btn"><i class="fas fa-calendar-check"></i> Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Honeymoon -->
-                <div class="package-card">
-                    <div class="package-badge badge-romance">Romantic</div>
+                <div class="package-card" id="pkg-honeymoon">
+                    <div class="package-badge">Featured</div>
                     <div class="package-header">
                         <div class="package-icon"><i class="fas fa-heart"></i></div>
-                        <h3>Honeymoon Package</h3>
+                        <h3>Kashmir Honeymoon</h3>
                         <p class="package-duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights</p>
                     </div>
                     <div class="package-body">
-                        <p class="package-desc">Romantic Kashmir honeymoon with houseboat &amp; Shikara ride, Gulmarg &amp; peaceful Pahalgam.</p>
+                        <p class="package-desc">Romantic honeymoon in Kashmir with stays in Srinagar, Gulmarg & Pahalgam. Private car, houseboat & Shikara ride included.</p>
                         <div class="package-price">
                             <span class="price-amount">₹33,999</span>
-                            <span class="price-label">total package</span>
+                            <span class="price-per">total package</span>
                         </div>
-                        <a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Kashmir%20Honeymoon%20Package" target="_blank" rel="noopener" class="btn btn-package">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Us <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="booking.html?pkg=pkg-honeymoon" class="btn btn-package" id="pkg-honeymoon-btn"><i class="fas fa-calendar-check"></i> Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- 6 Pax -->
-                <div class="package-card">
-                    <div class="package-badge badge-popular">6 Pax</div>
+                <div class="package-card" id="pkg-6pax">
+                    <div class="package-badge">Featured</div>
                     <div class="package-header">
                         <div class="package-icon"><i class="fas fa-campground"></i></div>
-                        <h3>Tour (6 Pax)</h3>
+                        <h3>Kashmir Tour (6 Pax)</h3>
                         <p class="package-duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights · 6 Pax</p>
                     </div>
                     <div class="package-body">
-                        <p class="package-desc">Srinagar, Gulmarg, Pahalgam &amp; Sonmarg with hotel stay, transport &amp; sightseeing for 6 guests.</p>
+                        <p class="package-desc">Explore Srinagar, Gulmarg, Pahalgam & Sonmarg with this 6-day Kashmir tour package. Includes hotel stay, transport & sightseeing.</p>
                         <div class="package-price">
                             <span class="price-amount">₹57,999</span>
-                            <span class="price-label">total package</span>
+                            <span class="price-per">total package</span>
                         </div>
-                        <a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Kashmir%20Tour%20Package%20(6%20Pax)" target="_blank" rel="noopener" class="btn btn-package">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Us <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="booking.html?pkg=pkg-6pax" class="btn btn-package" id="pkg-6pax-btn"><i class="fas fa-calendar-check"></i> Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Kashmir Holiday -->
-                <div class="package-card">
-                    <div class="package-badge badge-value">7 Nights</div>
+                <div class="package-card" id="pkg-holiday">
+                    <div class="package-badge">Featured</div>
                     <div class="package-header">
                         <div class="package-icon"><i class="fas fa-umbrella-beach"></i></div>
                         <h3>Kashmir Holiday</h3>
                         <p class="package-duration"><i class="fas fa-calendar-alt"></i> 7 Days / 6 Nights · 2 Pax</p>
                     </div>
                     <div class="package-body">
-                        <p class="package-desc">7-day Kashmir holiday covering all major attractions with complete travel, stays &amp; guided sightseeing.</p>
+                        <p class="package-desc">Book a 7-day Kashmir holiday covering all major attractions with complete travel, stays, and guided sightseeing included.</p>
                         <div class="package-price">
                             <span class="price-amount">₹39,999</span>
-                            <span class="price-label">total package</span>
+                            <span class="price-per">total package</span>
                         </div>
-                        <a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Kashmir%20Holiday%20Package" target="_blank" rel="noopener" class="btn btn-package">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Us <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="booking.html?pkg=pkg-holiday" class="btn btn-package" id="pkg-holiday-btn"><i class="fas fa-calendar-check"></i> Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -448,73 +508,25 @@
             <div class="section-header text-center">
                 <div class="section-label center">
                     <span class="label-line"></span>
-                    <span class="label-text">What We Offer</span>
+                    <span class="label-text">What We Serve</span>
                     <span class="label-line"></span>
                 </div>
-                <h2 class="section-title">Kashmir &amp; <em>Ladakh</em> Services</h2>
+                <h2 class="section-title">Explore Our Top <span class="text-accent">Kashmir & Ladakh</span> Tour Packages</h2>
                 <p class="section-subtitle">Comprehensive travel services for every type of traveler</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-mosque"></i></div>
-                    <h4>Kashmir Packages</h4>
-                    <p>Houseboat stays, Shikara rides, and sightseeing in Srinagar, Gulmarg, Sonmarg &amp; Pahalgam.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-mountain"></i></div>
-                    <h4>Ladakh Packages</h4>
-                    <p>Leh, Nubra Valley, and Pangong Lake tours. Enjoy Khardung La drives &amp; adventure sports.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-users"></i></div>
-                    <h4>Family Tours</h4>
-                    <p>Family-friendly Kashmir packages featuring safe transport, comfortable stays, and guided sightseeing.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-heart"></i></div>
-                    <h4>Honeymoon in Kashmir</h4>
-                    <p>Romantic tours with luxury stays, private Shikara rides, snow adventures in Gulmarg &amp; Pahalgam.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-hiking"></i></div>
-                    <h4>Adventure Tours</h4>
-                    <p>Skiing in Gulmarg, trekking in Sonmarg, and river rafting in Pahalgam for thrill seekers.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-compass"></i></div>
-                    <h4>Offbeat Packages</h4>
-                    <p>Hidden gems like Gurez Valley, Doodhpathri, Sinthan Top and Keran Valley for nature lovers.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-tags"></i></div>
-                    <h4>Budget Tours</h4>
-                    <p>Affordable packages with stays, transfers, and sightseeing in all major Kashmir destinations.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-people-carry"></i></div>
-                    <h4>Group Tours</h4>
-                    <p>Curated tours for families, friends, or corporate teams with guided sightseeing &amp; exclusive deals.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-city"></i></div>
-                    <h4>Srinagar Tours</h4>
-                    <p>Best Srinagar packages ideal for family tours, couple trips, honeymoon, and budget travelers.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
-                    <h4>Tours From Delhi</h4>
-                    <p>Kashmir packages from Delhi covering Srinagar, Gulmarg, Pahalgam, and Sonmarg.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
-                    <h4>Tours From Mumbai</h4>
-                    <p>Kashmir packages from Mumbai perfect for family tours, honeymoon, and budget travel.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
-                    <h4>Tours From Hyderabad</h4>
-                    <p>Kashmir packages from Hyderabad ideal for family tours, couple trips, and budget travel.</p>
-                </div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-mosque"></i></div><h4>Kashmir Tour Packages</h4><p>Book the best Kashmir tour packages with houseboat stays, Shikara rides, and sightseeing in Srinagar, Gulmarg, Sonmarg & Pahalgam.</p><a href="booking.html?pkg=pkg-best" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-mountain"></i></div><h4>Ladakh Tour Packages</h4><p>Book top Ladakh tour packages with stays in Leh, Nubra Valley, and Pangong Lake. Enjoy Khardung La drives & adventure sports.</p><a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Ladakh%20Tour%20Packages" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-users"></i></div><h4>Family Tour Packages</h4><p>Explore Kashmir with family-friendly tour packages featuring safe transport, comfortable stays, and guided sightseeing.</p><a href="booking.html?pkg=pkg-family" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-heart"></i></div><h4>Honeymoon in Kashmir</h4><p>Romantic Kashmir honeymoon tours with luxury stays, private Shikara rides, snowy adventures in Gulmarg & peaceful Pahalgam.</p><a href="booking.html?pkg=pkg-honeymoon" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-hiking"></i></div><h4>Adventure Tour Packages</h4><p>Experience skiing in Gulmarg, trekking in Sonmarg, and rafting in Pahalgam. Perfect for thrill seekers and nature lovers.</p><a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Adventure%20Tour%20Packages" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-compass"></i></div><h4>Offbeat Tour Packages</h4><p>Discover hidden gems like Gurez Valley, Doodhpathri, Sinthan Top and Keran Valley. Perfect for nature lovers seeking peace.</p><a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Offbeat%20Tour%20Packages" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-tags"></i></div><h4>Cheap Kashmir Tours</h4><p>Affordable budget tour packages with stays, transfers, and sightseeing in Srinagar, Gulmarg, Sonamarg & Pahalgam.</p><a href="booking.html?pkg=pkg-budget" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-people-carry"></i></div><h4>Kashmir Group Tours</h4><p>Curated group tours perfect for families, friends, or corporate teams with guided sightseeing & exclusive deals.</p><a href="booking.html?pkg=pkg-group" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-city"></i></div><h4>Best Srinagar Tours</h4><p>Book the best Srinagar tour packages ideal for family tours, couple trips, honeymoon, and budget tours.</p><a href="booking.html?pkg=pkg-holiday" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-plane-departure"></i></div><h4>Tours From Delhi</h4><p>Kashmir tour packages from Delhi covering Srinagar, Gulmarg, Pahalgam, and Sonmarg — perfect for all trip types.</p><a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Tours%20from%20Delhi" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-plane-departure"></i></div><h4>Tours From Mumbai</h4><p>Kashmir tour packages from Mumbai perfect for family tours, couple trips, honeymoon, and budget travel.</p><a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Tours%20from%20Mumbai" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-plane-departure"></i></div><h4>Tours From Hyderabad</h4><p>Kashmir tour packages from Hyderabad ideal for family tours, couple trips, honeymoon, and budget travel.</p><a href="https://wa.me/917889528922?text=Hi%2C%20I%20am%20interested%20in%20Tours%20from%20Hyderabad" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 24px; font-size: 0.9rem;">Book Now</a></div>
             </div>
         </div>
     </section>
@@ -528,49 +540,49 @@
                     <span class="label-text">Photo Gallery</span>
                     <span class="label-line"></span>
                 </div>
-                <h2 class="section-title">Glimpses of <em>Kashmir</em></h2>
+                <h2 class="section-title">Glimpses of <span class="text-accent">Kashmir</span></h2>
                 <p class="section-subtitle">Moments captured from our travelers' unforgettable journeys</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item gallery-item-wide">
-                    <img src="images/hero-bg.png" alt="Kashmir Mountain Panorama" loading="lazy">
-                    <div class="gallery-caption">
-                        <i class="fas fa-expand-alt"></i>
+                <div class="gallery-item gallery-item-lg" id="gallery-1">
+                    <img src="images/hero-bg.png" alt="Kashmir Mountain View">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
                         <span>Kashmir Panorama</span>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/dal-lake.png" alt="Dal Lake" loading="lazy">
-                    <div class="gallery-caption">
-                        <i class="fas fa-expand-alt"></i>
+                <div class="gallery-item" id="gallery-2">
+                    <img src="images/dal-lake.png" alt="Dal Lake">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
                         <span>Dal Lake</span>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/gulmarg.png" alt="Gulmarg" loading="lazy">
-                    <div class="gallery-caption">
-                        <i class="fas fa-expand-alt"></i>
+                <div class="gallery-item" id="gallery-3">
+                    <img src="images/gulmarg.png" alt="Gulmarg">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
                         <span>Gulmarg</span>
                     </div>
                 </div>
-                <div class="gallery-item gallery-item-wide">
-                    <img src="images/pahalgam.png" alt="Pahalgam Valley" loading="lazy">
-                    <div class="gallery-caption">
-                        <i class="fas fa-expand-alt"></i>
+                <div class="gallery-item gallery-item-lg" id="gallery-4">
+                    <img src="images/pahalgam.png" alt="Pahalgam">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
                         <span>Pahalgam Valley</span>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/sonamarg.png" alt="Sonamarg" loading="lazy">
-                    <div class="gallery-caption">
-                        <i class="fas fa-expand-alt"></i>
+                <div class="gallery-item" id="gallery-5">
+                    <img src="images/sonamarg.png" alt="Sonamarg">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
                         <span>Sonamarg</span>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/shikara.png" alt="Shikara Ride" loading="lazy">
-                    <div class="gallery-caption">
-                        <i class="fas fa-expand-alt"></i>
+                <div class="gallery-item" id="gallery-6">
+                    <img src="images/shikara.png" alt="Shikara Ride">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
                         <span>Shikara Ride</span>
                     </div>
                 </div>
@@ -587,32 +599,33 @@
                     <span class="label-text">Testimonials</span>
                     <span class="label-line"></span>
                 </div>
-                <h2 class="section-title">What Our <em>Travelers</em> Say</h2>
+                <h2 class="section-title">What Our <span class="text-accent">Travelers</span> Say</h2>
                 <p class="section-subtitle">Real reviews from real travelers who experienced Kashmir with us</p>
             </div>
-
-            <div class="reviews-summary">
-                <div class="summary-inner">
-                    <span class="summary-score">5.0</span>
-                    <div class="summary-right">
-                        <div class="summary-stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="summary-count">Based on 117 Google Reviews</p>
-                        <div class="summary-social">
-                            <a href="https://www.instagram.com/the_mannat_tour_and_travels?igsh=MWM3Y3dsdTF4bjJzcA%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="btn-social btn-instagram">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                            <a href="https://www.facebook.com/share/14YwMwSjzqU/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn-social btn-facebook">
-                                <i class="fab fa-facebook-f"></i> Facebook
-                            </a>
-                        </div>
+            <div class="reviews-rating-summary">
+                <div class="rating-big">
+                    <span class="rating-number">5.0</span>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="rating-count" style="margin-bottom: 16px;">Based on 117 Google Reviews</span>
+                    <div class="review-social-links" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/the_mannat_tour_and_travels?igsh=MWM3Y3dsdTF4bjJzcA%3D%3D&utm_source=qr" target="_blank" class="btn btn-package" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); width: auto; padding: 10px 24px;">
+                            <i class="fab fa-instagram"></i> Follow on Instagram
+                        </a>
+                        <a href="https://www.facebook.com/share/14YwMwSjzqU/?mibextid=wwXIfr" target="_blank" class="btn btn-package" style="background: #1877F2; width: auto; padding: 10px 24px;">
+                            <i class="fab fa-facebook-f"></i> Follow on Facebook
+                        </a>
                     </div>
                 </div>
             </div>
-
             <div class="reviews-slider" id="reviews-slider">
                 <div class="reviews-track" id="reviews-track">
+                    <!-- Review 1 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="review-avatar">FS</div>
@@ -620,17 +633,18 @@
                                 <h4>Faik Sawant</h4>
                                 <span class="review-date">2 months ago</span>
                             </div>
-                            <div class="review-source"><i class="fab fa-google"></i></div>
+                            <div class="review-google"><i class="fab fa-google"></i></div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="review-text">
-                            "Best and trustworthy tour one could ever have in J&amp;K. Felt like home with these guys.
-                            Would surely visit in every season to witness the jannat on earth. 😍
+                            "Best and trustworthy tour one could ever have in J&K. Felt like home with these guys… 🫂 
+                            Would surely like to visit J&K in every season to witness the jannat on earth. 😍 
                             Everything was best from hotels to food. Bilal sir personally took care of everything."
                         </p>
                     </div>
+                    <!-- Review 2 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="review-avatar">SA</div>
@@ -638,17 +652,18 @@
                                 <h4>Swaleha Arif</h4>
                                 <span class="review-date">2 months ago</span>
                             </div>
-                            <div class="review-source"><i class="fab fa-google"></i></div>
+                            <div class="review-google"><i class="fab fa-google"></i></div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="review-text">
-                            "My heartfelt gratitude to Bilal Bhai for beautifully organizing our Kashmir honeymoon trip
-                            (6N/7D). From planning to execution, every detail was perfectly handled. Truly a
-                            memorable experience we will cherish forever!"
+                            "I would like to express my heartfelt gratitude to the owner Bilal Bhai for beautifully 
+                            organizing our Kashmir honeymoon trip (6N / 7D). From planning to execution, 
+                            every detail was perfectly handled. Truly a memorable experience!"
                         </p>
                     </div>
+                    <!-- Review 3 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="review-avatar">WH</div>
@@ -656,17 +671,18 @@
                                 <h4>Waqas Hasware</h4>
                                 <span class="review-date">2 months ago</span>
                             </div>
-                            <div class="review-source"><i class="fab fa-google"></i></div>
+                            <div class="review-google"><i class="fab fa-google"></i></div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="review-text">
-                            "My heartfelt thanks to Bilal Bhai for thoughtfully organizing our Kashmir honeymoon trip
-                            of 6 Nights and 7 Days. The entire journey was handled with utmost care.
-                            Good service and good facility throughout!"
+                            "My heartfelt thanks to Bilal Bhai for thoughtfully organizing our Kashmir honeymoon trip 
+                            of 6 Nights and 7 Days. From planning to execution, the entire journey was handled with 
+                            utmost care. Good service and good facility throughout!"
                         </p>
                     </div>
+                    <!-- Review 4 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="review-avatar">RK</div>
@@ -674,17 +690,18 @@
                                 <h4>Rahul Kumar</h4>
                                 <span class="review-date">3 months ago</span>
                             </div>
-                            <div class="review-source"><i class="fab fa-google"></i></div>
+                            <div class="review-google"><i class="fab fa-google"></i></div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="review-text">
-                            "They guided us to the best spots for authentic Kashmiri shopping. The team was very
-                            professional and knew all the hidden gems. Would highly recommend Mannat Tours
-                            for anyone planning a Kashmir trip!"
+                            "Guided us where to do shopping on authentic Kashmiri products. The team was very 
+                            professional and knew all the best spots. Would highly recommend Mannat Tours 
+                            for anyone planning a Kashmir trip. Exceptional service!"
                         </p>
                     </div>
+                    <!-- Review 5 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="review-avatar">PM</div>
@@ -692,46 +709,120 @@
                                 <h4>Priya Mehta</h4>
                                 <span class="review-date">4 months ago</span>
                             </div>
-                            <div class="review-source"><i class="fab fa-google"></i></div>
+                            <div class="review-google"><i class="fab fa-google"></i></div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="review-text">
-                            "Best family trip we have ever had! The itinerary was perfectly planned with the right
-                            balance of sightseeing and relaxation. The hotels were excellent and the food was
-                            absolutely delicious. Very budget-friendly too!"
+                            "Best family trip we have ever had! The itinerary was perfectly planned with just 
+                            the right balance of sightseeing and relaxation. The hotels were excellent and 
+                            the food was absolutely delicious. Budget-friendly too!"
                         </p>
                     </div>
                 </div>
                 <div class="reviews-controls">
-                    <button class="review-btn" id="review-prev" aria-label="Previous review">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
+                    <button class="review-btn review-prev" id="review-prev" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
                     <div class="review-dots" id="review-dots"></div>
-                    <button class="review-btn" id="review-next" aria-label="Next review">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                    <button class="review-btn review-next" id="review-next" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Kashmiri Artifact Divider -->
+    <div class="kashmiri-divider">
+        <div class="divider-pattern"></div>
+        <img src="images/chinar-leaf.png" alt="" class="divider-leaf" aria-hidden="true">
+        <div class="divider-pattern"></div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-label center">
+                    <span class="label-line"></span>
+                    <span class="label-text">Quick FAQ</span>
+                    <span class="label-line"></span>
+                </div>
+                <h2 class="section-title">Frequently Asked <span class="text-accent">Questions</span></h2>
+                <p class="section-subtitle">Everything you need to know before booking your Kashmir trip</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item" id="faq-1">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><i class="fas fa-plane-departure faq-q-icon"></i> What is the best time to visit Kashmir?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kashmir is beautiful year-round! <strong>March to May</strong> offers tulip gardens and pleasant weather. <strong>June to August</strong> is perfect for families and adventure. <strong>October to November</strong> showcases stunning autumn foliage. <strong>December to February</strong> is ideal for snow lovers and skiing in Gulmarg.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-2">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><i class="fas fa-wallet faq-q-icon"></i> Are there any hidden charges in your packages?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Absolutely not.</strong> We believe in 100% transparent pricing. The price you see includes hotel stays, cab transfers, and sightseeing as listed. Any optional activities (like Gondola rides, pony rides) are clearly mentioned as extra. No surprises, ever.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-3">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><i class="fas fa-shield-alt faq-q-icon"></i> Is Kashmir safe for tourists?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Kashmir is one of India's most welcoming tourist destinations. Tourist areas like Srinagar, Gulmarg, Pahalgam, and Sonamarg are completely safe. Locals are famous for their warm hospitality. Our team accompanies you throughout and ensures your comfort and security at all times.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-4">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><i class="fas fa-suitcase-rolling faq-q-icon"></i> What should I pack for a Kashmir trip?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pack layered warm clothing (even in summer, evenings can be cool). Essentials include: <strong>warm jackets, thermal wear</strong> (for winter), comfortable walking shoes, sunscreen, sunglasses, personal medicines, and a camera! We'll send you a detailed packing list after booking.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-5">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><i class="fas fa-credit-card faq-q-icon"></i> How do I book and what is the payment process?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Booking is simple! Just click <strong>"Book Now"</strong> on any package or message us on WhatsApp. We require a <strong>30% advance</strong> to confirm your booking, and the remaining amount can be paid upon arrival. We accept UPI, bank transfer, and cash payments.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-6">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><i class="fas fa-edit faq-q-icon"></i> Can I customize my tour package?</span>
+                        <i class="fas fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Yes, 100%!</strong> All our packages are fully customizable. Want to add extra days? Upgrade your hotel? Include Ladakh in your trip? Just tell us your preferences and budget — we'll design the perfect itinerary just for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp / Contact CTA Section -->
     <section class="cta-section">
         <div class="cta-bg">
-            <img src="images/hero-bg.png" alt="Kashmir Mountains" loading="lazy">
+            <img src="images/hero-bg.png" alt="Kashmir Mountains" class="cta-bg-img">
             <div class="cta-overlay"></div>
         </div>
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Experience <span class="text-gold">Kashmir</span>?</h2>
-                <p>Get a customised itinerary designed just for you. Contact us for the best deals!</p>
+                <p>Get a customized itinerary designed just for you. Contact us now for the best deals!</p>
                 <div class="cta-buttons">
-                    <a href="https://wa.me/917889528922?text=Hi%20Bilal%20Bhai%2C%20I%20am%20interested%20in%20Kashmir%20tour%20packages.%20Please%20share%20details." class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <a href="https://wa.me/917889528922?text=Hi%20Bilal%20Bhai%2C%20I%20am%20interested%20in%20Kashmir%20tour%20packages.%20Please%20share%20details." class="btn btn-whatsapp" id="cta-whatsapp" target="_blank">
                         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                     </a>
-                    <a href="tel:+917889528922" class="btn btn-call">
+                    <a href="tel:+917889528922" class="btn btn-call" id="cta-call">
                         <i class="fas fa-phone-alt"></i> Call: 078895 28922
                     </a>
                 </div>
@@ -748,104 +839,94 @@
                     <span class="label-text">Get In Touch</span>
                     <span class="label-line"></span>
                 </div>
-                <h2 class="section-title">Contact <em>Us</em></h2>
+                <h2 class="section-title">Contact <span class="text-accent">Us</span></h2>
                 <p class="section-subtitle">Plan your dream Kashmir trip today</p>
             </div>
-
             <div class="contact-grid">
-                <div class="contact-info-side">
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="contact-info-cards">
+                    <div class="contact-card" id="contact-address">
+                        <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <h4>Our Location</h4>
-                        <p>NH 444, Nowgam - Pulwama Rd,<br>Magraypora, Khanda,<br>Jammu &amp; Kashmir 191113</p>
+                        <p>NH 444, Nowgam - Pulwama Rd,<br>Magraypora, Bagati Kani Pora,<br>Khanda, Magrapora,<br>Jammu and Kashmir 191113</p>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-                        <h4>Phone Numbers</h4>
-                        <p>
-                            <a href="tel:+917889528922">078895 28922</a><br>
-                            <a href="tel:+919797716577">097977 16577</a>
-                        </p>
-                        <span class="contact-note">Available 24/7</span>
+                    <div class="contact-card" id="contact-phone-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h4>Phone Number</h4>
+                        <p><a href="tel:+917889528922">078895 28922</a><br><a href="tel:+919797716577">097977 16577</a></p>
+                        <p class="contact-card-note">Available 24/7</p>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-card" id="contact-email">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
                         <h4>Email Address</h4>
-                        <p><a href="mailto:mannatourandtravels@gmail.com">mannatourandtravels@gmail.com</a></p>
-                        <span class="contact-note">We reply within 24 hours</span>
+                        <p><a href="mailto:Mannatourandtravel@gmail.com">Mannatourandtravel@gmail.com</a></p>
+                        <p class="contact-card-note">We reply within 24 hours</p>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div class="contact-card" id="contact-whatsapp">
+                        <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
                         <h4>WhatsApp</h4>
-                        <p><a href="https://wa.me/917889528922" target="_blank" rel="noopener">078895 28922</a></p>
-                        <span class="contact-note">Quick response assured</span>
+                        <p><a href="https://wa.me/917889528922" target="_blank">078895 28922</a></p>
+                        <p class="contact-card-note">Quick response assured</p>
                     </div>
                 </div>
-
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contact-form" novalidate>
+                    <form class="contact-form" id="contact-form">
                         <h3>Send Us a Message</h3>
-                        <p class="form-intro">Tell us about your dream trip and we'll get back within 24 hours</p>
-
+                        <p>Tell us about your dream trip and we'll get back to you within 24 hours</p>
                         <div class="form-group">
+                            <input type="text" id="form-name" placeholder="Your Full Name" required>
                             <label for="form-name"><i class="fas fa-user"></i></label>
-                            <input type="text" id="form-name" name="name" placeholder="Your Full Name" required autocomplete="name">
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
+                                <input type="email" id="form-email" placeholder="Email Address" required>
                                 <label for="form-email"><i class="fas fa-envelope"></i></label>
-                                <input type="email" id="form-email" name="email" placeholder="Email Address" required autocomplete="email">
                             </div>
                             <div class="form-group">
+                                <input type="tel" id="form-phone" placeholder="Phone Number" required>
                                 <label for="form-phone"><i class="fas fa-phone"></i></label>
-                                <input type="tel" id="form-phone" name="phone" placeholder="Phone Number" required autocomplete="tel">
                             </div>
                         </div>
-
                         <div class="form-row">
-                            <div class="form-group form-group-select">
-                                <label for="form-package"><i class="fas fa-suitcase"></i></label>
-                                <select id="form-package" name="package">
+                            <div class="form-group">
+                                <select id="form-package">
                                     <option value="" disabled selected>Select Package</option>
-                                    <option value="group">Group Tour (12 Pax) – ₹76,000</option>
-                                    <option value="budget">Budget Tour (2 Pax) – ₹22,000</option>
-                                    <option value="luxury">Luxury Tour (2 Pax) – ₹95,999</option>
-                                    <option value="family">Family Tour (4 Pax) – ₹48,000</option>
+                                    <option value="group">Kashmir Group Tour (12 Pax) – ₹76,000</option>
+                                    <option value="budget">Budget Kashmir Tour (2 Pax) – ₹22,000</option>
+                                    <option value="luxury">Luxury Kashmir Tour (2 Pax) – ₹95,999</option>
+                                    <option value="family">Family Kashmir Tour (4 Pax) – ₹48,000</option>
                                     <option value="best">Best Kashmir Tour (2 Pax) – ₹26,999</option>
-                                    <option value="honeymoon">Honeymoon Package – ₹33,999</option>
-                                    <option value="6pax">Tour (6 Pax) – ₹57,999</option>
+                                    <option value="honeymoon">Kashmir Honeymoon – ₹33,999</option>
+                                    <option value="6pax">Kashmir Tour (6 Pax) – ₹57,999</option>
                                     <option value="holiday">Kashmir Holiday (2 Pax) – ₹39,999</option>
                                     <option value="custom">Custom Package</option>
                                 </select>
+                                <label for="form-package"><i class="fas fa-suitcase"></i></label>
                             </div>
                             <div class="form-group">
+                                <input type="number" id="form-guests" placeholder="Number of Guests" min="1" max="50">
                                 <label for="form-guests"><i class="fas fa-users"></i></label>
-                                <input type="number" id="form-guests" name="guests" placeholder="Number of Guests" min="1" max="50">
                             </div>
                         </div>
-
-                        <div class="form-group form-group-textarea">
+                        <div class="form-group">
+                            <textarea id="form-message" rows="4" placeholder="Tell us about your dream trip..."></textarea>
                             <label for="form-message"><i class="fas fa-comment"></i></label>
-                            <textarea id="form-message" name="message" rows="4" placeholder="Tell us about your dream trip..."></textarea>
                         </div>
-
                         <button type="submit" class="btn btn-submit" id="form-submit">
-                            <span>Send via WhatsApp</span>
-                            <i class="fab fa-whatsapp"></i>
+                            <span>Send Inquiry</span>
+                            <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
                 </div>
             </div>
-
-            <div class="map-container">
-                <iframe
+            <!-- Google Map -->
+            <div class="map-container" id="map-container">
+                <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.5!2d74.85!3d33.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUxJzAwLjAiTiA3NMKwNTEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1710000000000"
-                    width="100%"
-                    height="400"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 16px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
                     title="Mannat Tour and Travels Location">
                 </iframe>
@@ -859,26 +940,25 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <span>🏔️</span>
-                        <div>
+                        <span class="logo-icon">🏔️</span>
+                        <div class="logo-text">
                             <span class="logo-main">Kashmir Loom</span>
-                            <span class="logo-sub">by Mannat Tour &amp; Travels</span>
+                            <span class="logo-sub">by Mannat Tour & Travels</span>
                         </div>
                     </div>
                     <p class="footer-desc">
-                        Your trusted gateway to the unparalleled beauty of Kashmir.
+                        Your trusted gateway to experiencing the unparalleled beauty of Kashmir. 
                         We craft unforgettable journeys through Jannat on Earth.
                     </p>
                     <div class="footer-social">
-                        <a href="https://wa.me/917889528922" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.facebook.com/share/14YwMwSjzqU/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/the_mannat_tour_and_travels?igsh=MWM3Y3dsdTF4bjJzcA%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://x.com/mannatbila5048?s=21" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://youtube.com/@mannattourandtravels?si=ra4pELK7CHSQJFQ9" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/917889528922" target="_blank" aria-label="WhatsApp" id="footer-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/share/14YwMwSjzqU/?mibextid=wwXIfr" target="_blank" aria-label="Facebook" id="footer-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/the_mannat_tour_and_travels?igsh=MWM3Y3dsdTF4bjJzcA%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram" id="footer-instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/mannatbila5048?s=21" target="_blank" aria-label="X (Twitter)" id="footer-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/@mannattourandtravels?si=ra4pELK7CHSQJFQ9" target="_blank" aria-label="YouTube" id="footer-youtube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-
-                <div class="footer-col">
+                <div class="footer-links-col">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -887,11 +967,9 @@
                         <li><a href="#packages">Packages</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-col">
+                <div class="footer-links-col">
                     <h4>Destinations</h4>
                     <ul>
                         <li><a href="#destinations">Dal Lake</a></li>
@@ -902,20 +980,18 @@
                         <li><a href="#destinations">Yousmarg</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-col">
+                <div class="footer-links-col">
                     <h4>Contact Info</h4>
                     <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> NH 444, Nowgam-Pulwama Rd, Khanda, J&amp;K 191113</li>
-                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+917889528922">078895 28922</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:mannatourandtravels@gmail.com">mannatourandtravels@gmail.com</a></li>
-                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/917889528922" target="_blank" rel="noopener">WhatsApp Us</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> NH 444, Nowgam-Pulwama Rd, Khanda, J&K 191113</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+917889528922">078895 28922</a>, <a href="tel:+919797716577">097977 16577</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:Mannatourandtravel@gmail.com">Mannatourandtravel@gmail.com</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/917889528922" target="_blank">WhatsApp Us</a></li>
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2026 Kashmir Loom Tour &amp; Travels by Mannat Tour &amp; Travels. All Rights Reserved.</p>
+                <p>&copy; 2026 Kashmir Loom Tour & Travels by Mannat Tour & Travels. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -926,15 +1002,111 @@
     </a>
 
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/917889528922?text=Hi%20Bilal%20Bhai%2C%20I%20am%20interested%20in%20Kashmir%20tour%20packages." class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/917889528922?text=Hi%20Bilal%20Bhai%2C%20I%20am%20interested%20in%20Kashmir%20tour%20packages." class="whatsapp-float" id="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <span class="wa-tooltip">Chat with us!</span>
     </a>
 
     <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox" id="lightbox">
         <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
-        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <img src="" alt="Gallery Preview" class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <!-- Login/Register Modal -->
+    <div class="auth-modal-overlay" id="auth-modal-overlay">
+        <div class="auth-modal" id="auth-modal">
+            <button class="auth-close" id="auth-close" aria-label="Close">&times;</button>
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <span class="logo-icon">🏔️</span>
+                    <span class="auth-logo-text">Kashmir Loom</span>
+                </div>
+                <p class="auth-tagline">Your gateway to Jannat on Earth</p>
+            </div>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login" id="tab-login">Login</button>
+                <button class="auth-tab" data-tab="register" id="tab-register">Register</button>
+                <div class="auth-tab-indicator" id="auth-tab-indicator"></div>
+            </div>
+            <div class="auth-body">
+                <!-- Login Form -->
+                <form class="auth-form" id="login-form">
+                    <div class="auth-form-group">
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="login-email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="auth-form-group">
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="login-password" placeholder="Password" required>
+                            <button type="button" class="password-toggle" aria-label="Toggle password visibility"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="auth-options">
+                        <label class="auth-checkbox">
+                            <input type="checkbox" id="remember-me">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="auth-forgot">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="auth-submit" id="login-submit">
+                        <span>Sign In</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="auth-divider"><span>or continue with</span></div>
+                    <div class="auth-social">
+                        <button type="button" class="social-btn google-btn"><i class="fab fa-google"></i> Google</button>
+                        <button type="button" class="social-btn fb-btn"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    </div>
+                </form>
+                <!-- Register Form -->
+                <form class="auth-form" id="register-form" style="display:none;">
+                    <div class="auth-form-group">
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="register-name" placeholder="Full Name" required>
+                        </div>
+                    </div>
+                    <div class="auth-form-group">
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="register-email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="auth-form-group">
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="register-phone" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="auth-form-group">
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="register-password" placeholder="Create Password" required>
+                            <button type="button" class="password-toggle" aria-label="Toggle password visibility"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <label class="auth-checkbox" style="margin-bottom:20px;">
+                        <input type="checkbox" id="terms-agree" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" style="color:var(--clr-primary);font-weight:600;">Terms & Conditions</a>
+                    </label>
+                    <button type="submit" class="auth-submit" id="register-submit">
+                        <span>Create Account</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="auth-divider"><span>or continue with</span></div>
+                    <div class="auth-social">
+                        <button type="button" class="social-btn google-btn"><i class="fab fa-google"></i> Google</button>
+                        <button type="button" class="social-btn fb-btn"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>

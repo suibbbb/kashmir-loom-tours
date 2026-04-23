@@ -751,6 +751,34 @@ const tourPackages = {
             { day: 'Day 6', title: 'Pahalgam Stay', desc: 'Dive deep into Pahalgam\'s beauty by visiting the famous three valleys: Aru, Betaab, and Chandanwari via local taxi. Engage with the local culture, take a nature walk, and enjoy the pristine mountain air.' },
             { day: 'Day 7', title: 'Farewell', desc: 'Enjoy a hearty final breakfast. Your driver will pick you up and drop you off at the Srinagar Airport with ample time for your departure flight.' }
         ]
+    },
+    'pkg-katra': {
+        title: 'Katra Pilgrimage Tour',
+        basePrice: 15999,
+        pax: 2,
+        duration: '3 Days / 2 Nights',
+        desc: 'Spiritual premium journey to Katra for Mata Vaishno Devi Darshan. Includes helicopter assistance, luxury stay & transfers.',
+        img: 'images/katra.png',
+        tag: 'Pilgrimage',
+        itinerary: [
+            { day: 'Day 1', title: 'Arrival in Jammu / Katra', desc: 'Arrive at Jammu Airport or Railway Station. Meet our representative for a premium transfer to the holy town of Katra. Check-in to your luxury hotel, freshen up, and spend the evening at leisure preparing for the spiritual journey ahead.' },
+            { day: 'Day 2', title: 'Mata Vaishno Devi Darshan', desc: 'Early morning start for the holy trek to Mata Vaishno Devi Shrine. We assist with priority passes or helicopter tickets (subject to availability/extra cost). After complete Darshan of Mata Rani, return to your hotel in Katra for a peaceful rest.' },
+            { day: 'Day 3', title: 'Departure', desc: 'Enjoy a hearty breakfast at your hotel. After check-out, our chauffeur will drop you securely at Jammu Airport or Railway Station for your onward journey with divine blessings.' }
+        ]
+    },
+    'pkg-custom': {
+        title: 'Custom Kashmir Tour',
+        basePrice: 0,
+        pax: 2,
+        duration: 'Customizable',
+        desc: 'A fully personalized Kashmir journey based on your specific requirements, city of departure, and preferences.',
+        img: 'images/hero-bg.png',
+        tag: 'Custom',
+        itinerary: [
+            { day: 'Day 1', title: 'Consultation & Arrival', desc: 'Our travel experts will consult with you to plan the perfect itinerary. Upon your arrival at Srinagar or Jammu, our team will receive you exactly as planned in your custom itinerary.' },
+            { day: 'Day 2+', title: 'Tailored Experiences', desc: 'Whether it is adventure sports in Gulmarg, offbeat camping in Gurez, or direct flights from your home city, every aspect is customized for you.' },
+            { day: 'Final Day', title: 'Smooth Departure', desc: 'Enjoy a hassle-free drop-off along with wonderful personalized memories.' }
+        ]
     }
 };
 
